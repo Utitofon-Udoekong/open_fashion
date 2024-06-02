@@ -1,0 +1,551 @@
+[{
+  "id": 1,
+  "title": "romper",
+  "brand": "Magnolia Maven",
+  "category": "skirts",
+  "price": 450.96,
+  "image": "assets/images/items/item1.png",
+  "rating": {
+    "rate": 4.3,
+    "count": 444
+  }
+}, {
+  "id": 2,
+  "title": "crop top",
+  "brand": "Peachy Keen",
+  "category": "lingerie",
+  "price": 202.66,
+  "image": "assets/images/items/item2.png",
+  "rating": {
+    "rate": 3.4,
+    "count": 330
+  }
+}, {
+  "id": 3,
+  "title": "skirt",
+  "brand": "Rose Petal",
+  "category": "dresses",
+  "price": 450.58,
+  "image": "assets/images/items/item3.png",
+  "rating": {
+    "rate": 4.0,
+    "count": 424
+  }
+}, {
+  "id": 4,
+  "title": "crop top",
+  "brand": "Magnolia Maven",
+  "category": "skirts",
+  "price": 384.9,
+  "image": "assets/images/items/item4.png",
+  "rating": {
+    "rate": 3.5,
+    "count": 376
+  }
+}, {
+  "id": 5,
+  "title": "cardigan",
+  "brand": "Daisy Dreams",
+  "category": "jackets",
+  "price": 271.8,
+  "image": "assets/images/items/item5.png",
+  "rating": {
+    "rate": 4.0,
+    "count": 182
+  }
+}, {
+  "id": 6,
+  "title": "skirt",
+  "brand": "Lavender Lane",
+  "category": "skirts",
+  "price": 401.79,
+  "image": "assets/images/items/item6.png",
+  "rating": {
+    "rate": 4.1,
+    "count": 21
+  }
+}, {
+  "id": 7,
+  "title": "crop top",
+  "brand": "Violet Vixen",
+  "category": "swimwear",
+  "price": 211.28,
+  "image": "assets/images/items/item7.png",
+  "rating": {
+    "rate": 4.7,
+    "count": 278
+  }
+}, {
+  "id": 8,
+  "title": "crop top",
+  "brand": "Peachy Keen",
+  "category": "blouses",
+  "price": 216.85,
+  "image": "assets/images/items/item8.png",
+  "rating": {
+    "rate": 4.1,
+    "count": 315
+  }
+}, {
+  "id": 9,
+  "title": "cardigan",
+  "brand": "Tulip Twist",
+  "category": "jackets",
+  "price": 305.98,
+  "image": "assets/images/items/item9.png",
+  "rating": {
+    "rate": 3.9,
+    "count": 252
+  }
+}, {
+  "id": 10,
+  "title": "skirt",
+  "brand": "Magnolia Maven",
+  "category": "pants",
+  "price": 286.73,
+  "image": "assets/images/items/item10.png",
+  "rating": {
+    "rate": 3.5,
+    "count": 173
+  }
+}, {
+  "id": 11,
+  "title": "jumpsuit",
+  "brand": "Daisy Dreams",
+  "category": "jumpsuits",
+  "price": 260.03,
+  "image": "assets/images/items/item1.png",
+  "rating": {
+    "rate": 4.9,
+    "count": 106
+  }
+}, {
+  "id": 12,
+  "title": "jumpsuit",
+  "brand": "Cherry Blossom",
+  "category": "jumpsuits",
+  "price": 212.67,
+  "image": "assets/images/items/item2.png",
+  "rating": {
+    "rate": 4.8,
+    "count": 25
+  }
+}, {
+  "id": 13,
+  "title": "crop top",
+  "brand": "Rose Petal",
+  "category": "blouses",
+  "price": 435.9,
+  "image": "assets/images/items/item3.png",
+  "rating": {
+    "rate": 4.8,
+    "count": 180
+  }
+}, {
+  "id": 14,
+  "title": "dress",
+  "brand": "Peachy Keen",
+  "category": "jumpsuits",
+  "price": 325.53,
+  "image": "assets/images/items/item4.png",
+  "rating": {
+    "rate": 4.3,
+    "count": 18
+  }
+}, {
+  "id": 15,
+  "title": "jumpsuit",
+  "brand": "Peachy Keen",
+  "category": "pants",
+  "price": 357.02,
+  "image": "assets/images/items/item5.png",
+  "rating": {
+    "rate": 3.6,
+    "count": 192
+  }
+}, {
+  "id": 16,
+  "title": "maxi dress",
+  "brand": "Daisy Dreams",
+  "category": "blouses",
+  "price": 350.79,
+  "image": "assets/images/items/item11.png",
+  "rating": {
+    "rate": 3.6,
+    "count": 442
+  }
+}, {
+  "id": 17,
+  "title": "dress",
+  "brand": "Peachy Keen",
+  "category": "skirts",
+  "price": 299.47,
+  "image": "assets/images/items/item12.png",
+  "rating": {
+    "rate": 3.3,
+    "count": 496
+  }
+}, {
+  "id": 18,
+  "title": "skirt",
+  "brand": "Buttercup Boutique",
+  "category": "blouses",
+  "price": 313.53,
+  "image": "assets/images/items/item13.png",
+  "rating": {
+    "rate": 4.7,
+    "count": 88
+  }
+}, {
+  "id": 19,
+  "title": "palazzo pants",
+  "brand": "Lavender Lane",
+  "category": "activewear",
+  "price": 154.65,
+  "image": "assets/images/items/item14.png",
+  "rating": {
+    "rate": 4.1,
+    "count": 26
+  }
+}, {
+  "id": 20,
+  "title": "romper",
+  "brand": "Magnolia Maven",
+  "category": "dresses",
+  "price": 361.21,
+  "image": "assets/images/items/item15.png",
+  "rating": {
+    "rate": 3.4,
+    "count": 498
+  }
+}, {
+  "id": 21,
+  "title": "dress",
+  "brand": "Lavender Lane",
+  "category": "lingerie",
+  "price": 314.87,
+  "image": "assets/images/items/item16.png",
+  "rating": {
+    "rate": 4.5,
+    "count": 472
+  }
+}, {
+  "id": 22,
+  "title": "cardigan",
+  "brand": "Buttercup Boutique",
+  "category": "activewear",
+  "price": 173.72,
+  "image": "assets/images/items/item17.png",
+  "rating": {
+    "rate": 3.3,
+    "count": 206
+  }
+}, {
+  "id": 23,
+  "title": "romper",
+  "brand": "Sunflower Style",
+  "category": "activewear",
+  "price": 106.83,
+  "image": "assets/images/items/item18.png",
+  "rating": {
+    "rate": 4.7,
+    "count": 200
+  }
+}, {
+  "id": 24,
+  "title": "dress",
+  "brand": "Magnolia Maven",
+  "category": "skirts",
+  "price": 127.39,
+  "image": "assets/images/items/item19.png",
+  "rating": {
+    "rate": 4.4,
+    "count": 188
+  }
+}, {
+  "id": 25,
+  "title": "maxi dress",
+  "brand": "Daisy Dreams",
+  "category": "jackets",
+  "price": 223.23,
+  "image": "assets/images/items/item20.png",
+  "rating": {
+    "rate": 4.3,
+    "count": 90
+  }
+}, {
+  "id": 26,
+  "title": "crop top",
+  "brand": "Rose Petal",
+  "category": "dresses",
+  "price": 427.11,
+  "image": "assets/images/items/item21.png",
+  "rating": {
+    "rate": 4.5,
+    "count": 86
+  }
+}, {
+  "id": 27,
+  "title": "maxi dress",
+  "brand": "Tulip Twist",
+  "category": "dresses",
+  "price": 251.64,
+  "image": "assets/images/items/item22.png",
+  "rating": {
+    "rate": 4.3,
+    "count": 268
+  }
+}, {
+  "id": 28,
+  "title": "cardigan",
+  "brand": "Sunflower Style",
+  "category": "jumpsuits",
+  "price": 308.52,
+  "image": "assets/images/items/item23.png",
+  "rating": {
+    "rate": 5.0,
+    "count": 197
+  }
+}, {
+  "id": 29,
+  "title": "blouse",
+  "brand": "Buttercup Boutique",
+  "category": "blouses",
+  "price": 359.53,
+  "image": "assets/images/items/item1.png",
+  "rating": {
+    "rate": 4.0,
+    "count": 496
+  }
+}, {
+  "id": 30,
+  "title": "palazzo pants",
+  "brand": "Magnolia Maven",
+  "category": "skirts",
+  "price": 480.29,
+  "image": "assets/images/items/item2.png",
+  "rating": {
+    "rate": 4.8,
+    "count": 126
+  }
+}, {
+  "id": 31,
+  "title": "romper",
+  "brand": "Daisy Dreams",
+  "category": "swimwear",
+  "price": 202.84,
+  "image": "assets/images/items/item3.png",
+  "rating": {
+    "rate": 4.7,
+    "count": 484
+  }
+}, {
+  "id": 32,
+  "title": "maxi dress",
+  "brand": "Sunflower Style",
+  "category": "sweaters",
+  "price": 460.03,
+  "image": "assets/images/items/item5.png",
+  "rating": {
+    "rate": 3.5,
+    "count": 157
+  }
+}, {
+  "id": 33,
+  "title": "tunic",
+  "brand": "Tulip Twist",
+  "category": "swimwear",
+  "price": 142.48,
+  "image": "assets/images/items/item4.png",
+  "rating": {
+    "rate": 3.8,
+    "count": 401
+  }
+}, {
+  "id": 34,
+  "title": "tunic",
+  "brand": "Magnolia Maven",
+  "category": "dresses",
+  "price": 145.68,
+  "image": "assets/images/items/item6.png",
+  "rating": {
+    "rate": 4.0,
+    "count": 273
+  }
+}, {
+  "id": 35,
+  "title": "tunic",
+  "brand": "Rose Petal",
+  "category": "swimwear",
+  "price": 399.93,
+  "image": "assets/images/items/item7.png",
+  "rating": {
+    "rate": 4.7,
+    "count": 80
+  }
+}, {
+  "id": 36,
+  "title": "maxi dress",
+  "brand": "Lavender Lane",
+  "category": "activewear",
+  "price": 202.7,
+  "image": "assets/images/items/item8.png",
+  "rating": {
+    "rate": 3.0,
+    "count": 107
+  }
+}, {
+  "id": 37,
+  "title": "maxi dress",
+  "brand": "Cherry Blossom",
+  "category": "sweaters",
+  "price": 453.84,
+  "image": "assets/images/items/item9.png",
+  "rating": {
+    "rate": 3.7,
+    "count": 495
+  }
+}, {
+  "id": 38,
+  "title": "dress",
+  "brand": "Peachy Keen",
+  "category": "jumpsuits",
+  "price": 328.17,
+  "image": "assets/images/items/item10.png",
+  "rating": {
+    "rate": 3.8,
+    "count": 500
+  }
+}, {
+  "id": 39,
+  "title": "dress",
+  "brand": "Cherry Blossom",
+  "category": "skirts",
+  "price": 156.61,
+  "image": "assets/images/items/item11.png",
+  "rating": {
+    "rate": 4.3,
+    "count": 157
+  }
+}, {
+  "id": 40,
+  "title": "skirt",
+  "brand": "Sunflower Style",
+  "category": "swimwear",
+  "price": 233.52,
+  "image": "assets/images/items/item12.png",
+  "rating": {
+    "rate": 3.6,
+    "count": 494
+  }
+}, {
+  "id": 41,
+  "title": "crop top",
+  "brand": "Lavender Lane",
+  "category": "pants",
+  "price": 146.08,
+  "image": "assets/images/items/item13.png",
+  "rating": {
+    "rate": 3.5,
+    "count": 459
+  }
+}, {
+  "id": 42,
+  "title": "maxi dress",
+  "brand": "Magnolia Maven",
+  "category": "activewear",
+  "price": 288.13,
+  "image": "assets/images/items/item14.png",
+  "rating": {
+    "rate": 3.4,
+    "count": 98
+  }
+}, {
+  "id": 43,
+  "title": "palazzo pants",
+  "brand": "Rose Petal",
+  "category": "jackets",
+  "price": 482.12,
+  "image": "assets/images/items/item15.png",
+  "rating": {
+    "rate": 4.6,
+    "count": 43
+  }
+}, {
+  "id": 44,
+  "title": "romper",
+  "brand": "Violet Vixen",
+  "category": "activewear",
+  "price": 213.18,
+  "image": "assets/images/items/item16.png",
+  "rating": {
+    "rate": 4.4,
+    "count": 294
+  }
+}, {
+  "id": 45,
+  "title": "skirt",
+  "brand": "Peachy Keen",
+  "category": "sweaters",
+  "price": 195.83,
+  "image": "assets/images/items/item17.png",
+  "rating": {
+    "rate": 4.0,
+    "count": 30
+  }
+}, {
+  "id": 46,
+  "title": "jumpsuit",
+  "brand": "Cherry Blossom",
+  "category": "pants",
+  "price": 199.9,
+  "image": "assets/images/items/item18.png",
+  "rating": {
+    "rate": 4.2,
+    "count": 18
+  }
+}, {
+  "id": 47,
+  "title": "palazzo pants",
+  "brand": "Daisy Dreams",
+  "category": "skirts",
+  "price": 441.09,
+  "image": "assets/images/items/item19.png",
+  "rating": {
+    "rate": 4.0,
+    "count": 481
+  }
+}, {
+  "id": 48,
+  "title": "palazzo pants",
+  "brand": "Buttercup Boutique",
+  "category": "dresses",
+  "price": 387.26,
+  "image": "assets/images/items/item20.png",
+  "rating": {
+    "rate": 5.0,
+    "count": 111
+  }
+}, {
+  "id": 49,
+  "title": "cardigan",
+  "brand": "Tulip Twist",
+  "category": "swimwear",
+  "price": 118.89,
+  "image": "assets/images/items/item21.png",
+  "rating": {
+    "rate": 3.0,
+    "count": 252
+  }
+}, {
+  "id": 50,
+  "title": "maxi dress",
+  "brand": "Magnolia Maven",
+  "category": "swimwear",
+  "price": 392.58,
+  "image": "assets/images/items/item22.png",
+  "rating": {
+    "rate": 3.0,
+    "count": 232
+  }
+}]
