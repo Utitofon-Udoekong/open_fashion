@@ -27,7 +27,7 @@ class CartDao {
     return cartBox.delete(id);
   }
 
-  Future<void> removeFromCart(String id) async {
+  Future<void> removeFromCart(int id) async {
     final box = Hive.box<CartItem>(AppStrings.cartBox);
     final item = box.get(id);
     if (item!.quantity > 1) {

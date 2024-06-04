@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:open_fashion/domain/entities/cart_item.dart';
 import 'package:open_fashion/presentation/components/buttons/action_buttons.dart';
 import 'package:open_fashion/presentation/components/cards/product_cards.dart';
@@ -30,15 +31,15 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final products = context.select((ShopCubit bloc) => bloc.state.products);
-    final cartSize = context.select((ShopCubit bloc) => bloc.state.cartSize);
     return Scaffold(
       appBar: AppBar(
         title: Image.asset(AppImages.logo),
       centerTitle: true,
       actions: [
-        
-        Builder(
-          builder: (context) {
+       ValueListenableBuilder(
+          valueListenable: Hive.box<CartItem>(AppStrings.cartBox).listenable(),
+          builder: (context, box, widget) {
+            var cartSize = box.length;
             return IconButton(
               onPressed: () => context.push('/cart'),
               padding: EdgeInsets.zero,
@@ -48,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                   cartSize.toString(),
                   style: AppTextStyle.bodyS(color: AppColors.white),
                 ),
-                child: Image.asset(AppImages.cart),
+                child: const Icon(Icons.shopping_cart_outlined),
               ),
             );
           },
@@ -176,7 +177,7 @@ class FilterTab extends StatelessWidget implements PreferredSizeWidget {
                       style: AppTextStyle.bodyS(color: AppColors.label),
                     ),
                     const Gap(10),
-                    Icon(Icons.close)
+                    const Icon(Icons.close)
                   ],
                 ),
               ),
@@ -195,7 +196,7 @@ class FilterTab extends StatelessWidget implements PreferredSizeWidget {
                       style: AppTextStyle.bodyS(color: AppColors.label),
                     ),
                     const Gap(10),
-                    Icon(Icons.close)
+                    const Icon(Icons.close)
                   ],
                 ),
               ),

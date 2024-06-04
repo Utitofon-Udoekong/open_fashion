@@ -22,7 +22,7 @@ class CartRepository {
     }
   }
 
-  Future<Either<String, String>> removeFromCart(String id) async {
+  Future<Either<String, String>> removeFromCart(int id) async {
     try {
       await _cartDao.removeFromCart(id);
       return right('Product removed from cart');
@@ -41,7 +41,4 @@ class CartRepository {
   }
 
   bool isCartEmpty() => _cartDao.isCartEmpty;
-  bool itemExists(String id) => _cartDao.itemExists(id);
-
-  // ValueListenable<Box<CartItem>> getCartItems() => _cartDao.getCartItems();
 }

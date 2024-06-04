@@ -43,7 +43,7 @@ class CartDrawer extends StatelessWidget {
                   )
                 : Column(
                     children: cart.map((item) {
-                      return ProductCart(product: item.product);
+                      return ProductCart(cartItem: item);
                     }).toList(),
                   ),
           ),

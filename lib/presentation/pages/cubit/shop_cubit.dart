@@ -27,15 +27,12 @@ class ShopCubit extends Cubit<ShopState> {
     response.fold((l) => fail(l), (r) => pass(r));
   }
 
-  void removeFromCart(String id) async {
+  void removeFromCart(int id) async {
     load();
     final response = await cartUseCase.removeFromCart(id);
     response.fold((l) => fail(l), (r) => pass(r));
   }
 
-  bool itemExists(String id) {
-    return cartUseCase.itemExists(id);
-  }
 
   void getProducts() async {
     load();

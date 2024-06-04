@@ -16,6 +16,8 @@ class CartItem extends HiveObject {
     required this.quantity,
   });
 
+  factory CartItem.empty() => CartItem(product: Product.empty(), quantity: 0);
+
   CartItem copyWith({
     Product? product,
     int? quantity,

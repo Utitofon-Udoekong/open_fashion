@@ -15,7 +15,7 @@ class CartUseCase {
     return await _repository.addToCart(cartItem);
   }
 
-  Future<Either<String, String>> removeFromCart(String id) async {
+  Future<Either<String, String>> removeFromCart(int id) async {
     return await _repository.removeFromCart(id);
   }
 
@@ -24,5 +24,4 @@ class CartUseCase {
   }
 
   bool isCartEmpty() => _repository.isCartEmpty();
-  bool itemExists(String id) => _repository.itemExists(id);
 }

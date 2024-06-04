@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:open_fashion/constants/style_guides.dart';
+import 'package:open_fashion/domain/entities/cart_item.dart';
 import 'package:open_fashion/presentation/pages/cubit/shop_cubit.dart';
 
 class Header extends StatelessWidget implements PreferredSizeWidget {
@@ -12,15 +15,16 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cartSize = context.select((ShopCubit bloc) => bloc.state.cartSize);
     return AppBar(
      
       title: Image.asset(AppImages.logo),
       centerTitle: true,
       bottom: bottom,
       actions: [
-        Builder(
-          builder: (context) {
+        ValueListenableBuilder(
+          valueListenable: Hive.box<CartItem>(AppStrings.cartBox).listenable(),
+          builder: (context, box, widget) {
+            var cartSize = box.length;
             return IconButton(
               onPressed: () => context.push('/cart'),
               padding: EdgeInsets.zero,
@@ -30,7 +34,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
                   cartSize.toString(),
                   style: AppTextStyle.bodyS(color: AppColors.white),
                 ),
-                child: Image.asset(AppImages.cart),
+                child: Icon(Icons.shopping_cart_outlined),
               ),
             );
           },

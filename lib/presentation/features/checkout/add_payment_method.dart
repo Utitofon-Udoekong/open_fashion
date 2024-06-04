@@ -13,24 +13,17 @@ import 'package:open_fashion/presentation/components/header.dart';
 import 'package:open_fashion/presentation/pages/cubit/shop_cubit.dart';
 
 
-class CartPage extends StatelessWidget {
-  const CartPage({super.key});
+class AddPaymentMethod extends StatelessWidget {
+  const AddPaymentMethod({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder(
-        valueListenable: Hive.box<CartItem>(AppStrings.cartBox).listenable(),
-        builder: (context, box, widget) {
-          final cart = box.values;
-          final total = cart
-              .map((e) => e.product.price * e.quantity)
-              .reduce((value, element) => value + element);
-          return Scaffold(
+    return Scaffold(
             appBar: const Header(),
             body: Column(
               children: [
                 const Gap(20),
-                const ATitle(title: 'CHECKOUT'),
+                const ATitle(title: 'PAYMENT METHOD'),
                 Expanded(
                   child: GridView.count(
                     padding: const EdgeInsets.all(20.0),
@@ -73,6 +66,5 @@ class CartPage extends StatelessWidget {
               ],
             ),
           );
-        });
   }
 }

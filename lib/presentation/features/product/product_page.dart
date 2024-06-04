@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:open_fashion/domain/entities/cart_item.dart';
 import 'package:open_fashion/presentation/components/buttons/action_buttons.dart';
 import 'package:open_fashion/presentation/components/header.dart';
@@ -92,25 +93,25 @@ class ProductPage extends StatelessWidget {
                 ),
               ),
               const Gap(20),
-              AppBasketButton(
-                added: false,
-                cartCount: '',
-                onTap: () {
-                  final itemExists = context
-                      .read<ShopCubit>()
-                      .itemExists(product.id.toString());
-                  print(itemExists);
-                  // if (itemExists) {
-                  //   context
-                  //       .read<ShopCubit>()
-                  //       .removeFromCart(product.id.toString());
-                  // } else {
-                  //   final cartItem =
-                  //       CartItem(product: product, quantity: 1);
-                  //   context.read<ShopCubit>().addToCart(cartItem);
-                  // }
-                },
-              ),
+              ValueListenableBuilder(
+                  valueListenable:
+                      Hive.box<CartItem>(AppStrings.cartBox).listenable(),
+                  builder: (context, box, widget) {
+                    final item = box.get(product.id) ?? CartItem.empty();
+                    final itemExists = item.quantity > 0;
+                    return AppBasketButton(
+                      added: itemExists,
+                      cartCount: item.quantity.toString(),
+                      addToCart: () {
+                        final cartItem =
+                            CartItem(product: product, quantity: 0);
+                        context.read<ShopCubit>().addToCart(cartItem);
+                      },
+                      removeFromCart: () {
+                        context.read<ShopCubit>().removeFromCart(product.id);
+                      }, isDark: true,
+                    );
+                  }),
               Padding(
                 padding: const EdgeInsets.all(16),
                 child: Column(
