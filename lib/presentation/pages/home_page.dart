@@ -95,7 +95,7 @@ class _HomePageState extends State<HomePage> {
                         context.push("/product");
                       },
                     );
-            }).toList(),
+            }).toList().animate(interval: 400.ms),
           ),
         ),
       ),
@@ -148,7 +148,7 @@ class FilterTab extends StatelessWidget implements PreferredSizeWidget {
                   const Gap(10),
                   ActionIconButtons(
                       onTap: onTap,
-                      image: isGrid ? AppImages.listview : AppImages.grid),
+                      image: isGrid ? AppImages.listview : AppImages.grid).animate(),
                   const Gap(10),
                   const ActionIconButtons(image: AppImages.filter),
                 ],
