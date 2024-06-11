@@ -48,18 +48,18 @@ class ProductListView extends StatelessWidget {
                         product.brand.toUpperCase(),
                         style: AppTextStyle.subTitleS(),
                       ),
-                      const Gap(5),
                       Text(
                         product.title,
                         style: AppTextStyle.bodyM(color: AppColors.label),
                       ),
-                      const Gap(10),
+                      const Gap(5),
                       Text(
                         '\$${product.price}',
                         style: AppTextStyle.price(color: AppColors.primary),
                       ),
                     ],
                   ),
+                  const Gap(5),
                   Row(
                     children: [
                       const Icon(
@@ -74,13 +74,14 @@ class ProductListView extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const Gap(5),
                   Row(
                     children: [
                       Text(
                         '${product.rating.rate} Ratings',
                         style: AppTextStyle.bodyS(color: AppColors.label),
                       ),
-                      const Gap(5),
+                      const Gap(15),
                       const SizeTag(size: 'S'),
                       const Gap(5),
                       const SizeTag(size: 'M'),
@@ -157,12 +158,11 @@ class ProductGridView extends StatelessWidget {
                     product.brand.toUpperCase(),
                     style: AppTextStyle.bodyS(),
                   ),
-                  const Gap(5),
                   Text(
                     product.title,
                     style: AppTextStyle.bodyS(color: AppColors.label),
                   ),
-                  const Gap(10),
+                  // const Gap(10),
                   Text(
                     '\$${product.price}',
                     style: AppTextStyle.price(color: AppColors.primary),

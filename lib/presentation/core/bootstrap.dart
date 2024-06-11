@@ -5,6 +5,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:open_fashion/constants/style_guides.dart';
+import 'package:open_fashion/domain/entities/payment_method.dart';
+import 'package:open_fashion/domain/entities/shipping_address.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'package:open_fashion/domain/entities/cart_item.dart';
@@ -24,9 +26,13 @@ void bootstrap() async {
   Hive
     ..registerAdapter(ProductAdapter())
     ..registerAdapter(RatingAdapter())
-    ..registerAdapter(CartItemAdapter());
+    ..registerAdapter(CartItemAdapter())
+    ..registerAdapter(ShippingAddressAdapter())
+    ..registerAdapter(PaymentMethodAdapter());
 
   await Hive.openBox<CartItem>(AppStrings.cartBox);
+  await Hive.openBox<PaymentMethod>(AppStrings.paymentMethodBox);
+  await Hive.openBox<ShippingAddress>(AppStrings.shippingAddressBox);
 
   runZonedGuarded(
     () => runApp(const AppBuilder()),

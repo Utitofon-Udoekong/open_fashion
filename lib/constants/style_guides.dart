@@ -12,7 +12,7 @@ class AppColors {
   static const label = Color(0xFF555555);
   static const placeholder = Color(0XFF888888);
   static const beige = Color(0XFFE0CFBA);
-  static const white = Color(0XFFFFFFFFF);
+  static const white = Color(0XFFFFFFFF);
   static const navBg = Color(0XFFE6E9EE);
   static const iconBg = Color(0XFFC4C4C4);
   static const ringBg = Color(0XFFE1E0DB);
@@ -20,41 +20,44 @@ class AppColors {
 
 class AppStrings {
   static const cartBox = 'cart_table_box';
+  static const shippingAddressBox = 'shipping_address_box';
+  static const paymentMethodBox = 'payment_method_box';
+}
+
+class HiveId {
+  static const product = 0;
+  static const rating = 1;
+  static const cart = 2;
+  static const shippingAddress = 3;
+  static const paymentMethod = 4;
 }
 
 class AppImages {
-  static const backward = "assets/images/icons/backward.png";
   static const bleach = "assets/images/icons/bleach.png";
   static const call = "assets/images/icons/call.png";
-  static const cart = "assets/images/icons/cart.png";
-  static const close = "assets/images/icons/close.png";
+  static const cardBg = "assets/images/icons/cardBg.png";
   static const divider = "assets/images/icons/divider.png";
   static const dividerPlain = "assets/images/icons/dividerPlain.png";
   static const door = "assets/images/icons/door.png";
-  static const down = "assets/images/icons/down.png";
   static const dry = "assets/images/icons/dry.png";
-  static const export = "assets/images/icons/export.png";
   static const filter = "assets/images/icons/filter.png";
-  static const forward = "assets/images/icons/forward.png";
   static const gallery = "assets/images/icons/gallery.png";
   static const grid = "assets/images/icons/grid.png";
+  static const happy = "assets/images/icons/happy.png";
   static const heart = "assets/images/icons/heart.png";
   static const instagram = "assets/images/icons/instagram.png";
   static const iron = "assets/images/icons/iron.png";
   static const listview = "assets/images/icons/listview.png";
   static const location = "assets/images/icons/location.png";
-  static const menu = "assets/images/icons/menu.png";
-  static const minus = "assets/images/icons/minus.png";
-  static const plus = "assets/images/icons/plus.png";
+  static const love = "assets/images/icons/love.png";
+  static const mastercard = "assets/images/icons/mastercard.png";
   static const refresh = "assets/images/icons/refresh.png";
-  static const resize = "assets/images/icons/resize.png";
-  static const search = "assets/images/icons/search.png";
+  static const sad = "assets/images/icons/sad.png";
   static const shipping = "assets/images/icons/shipping.png";
   static const sign = "assets/images/icons/sign.png";
+  static const success = "assets/images/icons/success.png";
   static const tag = "assets/images/icons/tag.png";
   static const twitter = "assets/images/icons/twitter.png";
-  static const up = "assets/images/icons/up.png";
-  static const voucher = "assets/images/icons/voucher.png";
   static const wash = "assets/images/icons/wash.png";
   static const youtube = "assets/images/icons/youtube.png";
 
@@ -83,11 +86,6 @@ class AppImages {
   static const item16 = "assets/images/items/item16.png";
   static const item17 = "assets/images/items/item17.png";
   static const item18 = "assets/images/items/item18.png";
-  static const item19 = "assets/images/items/item19.png";
-  static const item20 = "assets/images/items/item20.png";
-  static const item21 = "assets/images/items/item21.png";
-  static const item22 = "assets/images/items/item22.png";
-  static const item23 = "assets/images/items/item23.png";
 
   static const logo = "assets/images/logo.png";
 }

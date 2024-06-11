@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
@@ -8,7 +6,6 @@ import 'package:open_fashion/domain/entities/product.dart';
 
 @singleton
 class ProductRepository {
-  final Dio _dio = Dio();
 
   ProductRepository();
 

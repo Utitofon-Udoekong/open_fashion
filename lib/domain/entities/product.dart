@@ -2,10 +2,11 @@
 import 'dart:convert';
 
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:open_fashion/constants/style_guides.dart';
 
 part 'product.g.dart';
 
-@HiveType(typeId: 0)
+@HiveType(typeId: HiveId.product)
 class Product extends HiveObject {
   @HiveField(0)
   final int id;
@@ -115,7 +116,7 @@ class Product extends HiveObject {
   }
 }
 
-@HiveType(typeId: 1)
+@HiveType(typeId: HiveId.rating)
 class Rating {
   @HiveField(0)
   double rate;

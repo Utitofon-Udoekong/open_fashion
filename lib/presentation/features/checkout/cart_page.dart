@@ -12,7 +12,6 @@ import 'package:open_fashion/presentation/components/cards/product_cards.dart';
 import 'package:open_fashion/presentation/components/header.dart';
 import 'package:open_fashion/presentation/pages/cubit/shop_cubit.dart';
 
-
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
 
@@ -33,22 +32,23 @@ class CartPage extends StatelessWidget {
                 const ATitle(title: 'CHECKOUT'),
                 Expanded(
                   child: GridView.count(
-                    padding: const EdgeInsets.all(20.0),
-                    crossAxisCount: 1,
-                    mainAxisSpacing: 15,
-                    childAspectRatio: 2.1,
-                    children: cart
-                        .map(
-                          (cartItem) => ProductCart(
-                              cartItem: cartItem,
-                              addToCart: () =>
-                                  context.read<ShopCubit>().addToCart(cartItem),
-                              removeFromCart: () => context
-                                  .read<ShopCubit>()
-                                  .removeFromCart(cartItem.product.id)),
-                        )
-                        .toList(),
-                  ),
+                          padding: const EdgeInsets.all(20.0),
+                          crossAxisCount: 1,
+                          mainAxisSpacing: 15,
+                          childAspectRatio: 2.1,
+                          children: cart
+                              .map(
+                                (cartItem) => ProductCart(
+                                    cartItem: cartItem,
+                                    addToCart: () => context
+                                        .read<ShopCubit>()
+                                        .addToCart(cartItem),
+                                    removeFromCart: () => context
+                                        .read<ShopCubit>()
+                                        .removeFromCart(cartItem.product.id)),
+                              )
+                              .toList(),
+                        ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(20.0),
@@ -68,7 +68,7 @@ class CartPage extends StatelessWidget {
                 ),
                 ActionButton(
                   title: 'CHECKOUT',
-                  onTap: () {},
+                  onTap: () => context.push('/cart/place-order'),
                 )
               ],
             ),

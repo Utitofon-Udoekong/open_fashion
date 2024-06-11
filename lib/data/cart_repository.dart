@@ -6,6 +6,8 @@ import 'package:injectable/injectable.dart';
 
 import 'package:open_fashion/data/local/cart_dao.dart';
 import 'package:open_fashion/domain/entities/cart_item.dart';
+import 'package:open_fashion/domain/entities/payment_method.dart';
+import 'package:open_fashion/domain/entities/shipping_address.dart';
 
 @singleton
 class CartRepository {
@@ -39,6 +41,34 @@ class CartRepository {
       return left(e.message!);
     }
   }
+
+  Future<Either<String, String>> addShippingAddress(
+      ShippingAddress shippingAddress) async {
+    try {
+      final isAdded = await _cartDao.addShippingAddress(shippingAddress);
+      if (isAdded) {
+        return right('Shipping address added');
+      }
+      return left('Shipping address already exists');
+    } on DioException catch (e) {
+      return left(e.message!);
+    }
+  }
+
+  Future<Either<String, String>> addPaymentMethod(
+      PaymentMethod paymentMethod) async {
+    try {
+      final isAdded = await _cartDao.addPaymentMethod(paymentMethod);
+      if (isAdded) {
+        return right('Payment Method added');
+      }
+      return left('Payment Method already exists');
+    } on DioException catch (e) {
+      return left(e.message!);
+    }
+  }
+
+  void clearCart() => _cartDao.clearCart();
 
   bool isCartEmpty() => _cartDao.isCartEmpty;
 }

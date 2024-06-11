@@ -1,10 +1,11 @@
 import 'dart:convert';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:open_fashion/constants/style_guides.dart';
 
 import 'package:open_fashion/domain/entities/product.dart';
 part 'cart_item.g.dart';
 
-@HiveType(typeId: 2)
+@HiveType(typeId: HiveId.cart)
 class CartItem extends HiveObject {
   @HiveField(0)
   final Product product;

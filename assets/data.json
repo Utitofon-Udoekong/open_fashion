@@ -246,7 +246,7 @@
   "brand": "Sunflower Style",
   "category": "activewear",
   "price": 106.83,
-  "image": "assets/images/items/item18.png",
+  "image": "assets/images/items/item17.png",
   "rating": {
     "rate": 4.7,
     "count": 200
@@ -257,7 +257,7 @@
   "brand": "Magnolia Maven",
   "category": "skirts",
   "price": 127.39,
-  "image": "assets/images/items/item19.png",
+  "image": "assets/images/items/item9.png",
   "rating": {
     "rate": 4.4,
     "count": 188
@@ -268,7 +268,7 @@
   "brand": "Daisy Dreams",
   "category": "jackets",
   "price": 223.23,
-  "image": "assets/images/items/item20.png",
+  "image": "assets/images/items/item10.png",
   "rating": {
     "rate": 4.3,
     "count": 90
@@ -279,7 +279,7 @@
   "brand": "Rose Petal",
   "category": "dresses",
   "price": 427.11,
-  "image": "assets/images/items/item21.png",
+  "image": "assets/images/items/item1.png",
   "rating": {
     "rate": 4.5,
     "count": 86
@@ -290,7 +290,7 @@
   "brand": "Tulip Twist",
   "category": "dresses",
   "price": 251.64,
-  "image": "assets/images/items/item22.png",
+  "image": "assets/images/items/item12.png",
   "rating": {
     "rate": 4.3,
     "count": 268
@@ -301,7 +301,7 @@
   "brand": "Sunflower Style",
   "category": "jumpsuits",
   "price": 308.52,
-  "image": "assets/images/items/item23.png",
+  "image": "assets/images/items/item13.png",
   "rating": {
     "rate": 5.0,
     "count": 197
@@ -510,7 +510,7 @@
   "brand": "Daisy Dreams",
   "category": "skirts",
   "price": 441.09,
-  "image": "assets/images/items/item19.png",
+  "image": "assets/images/items/item9.png",
   "rating": {
     "rate": 4.0,
     "count": 481
@@ -521,7 +521,7 @@
   "brand": "Buttercup Boutique",
   "category": "dresses",
   "price": 387.26,
-  "image": "assets/images/items/item20.png",
+  "image": "assets/images/items/item10.png",
   "rating": {
     "rate": 5.0,
     "count": 111
@@ -532,7 +532,7 @@
   "brand": "Tulip Twist",
   "category": "swimwear",
   "price": 118.89,
-  "image": "assets/images/items/item21.png",
+  "image": "assets/images/items/item1.png",
   "rating": {
     "rate": 3.0,
     "count": 252
@@ -543,7 +543,7 @@
   "brand": "Magnolia Maven",
   "category": "swimwear",
   "price": 392.58,
-  "image": "assets/images/items/item22.png",
+  "image": "assets/images/items/item12.png",
   "rating": {
     "rate": 3.0,
     "count": 232

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 import 'package:open_fashion/constants/style_guides.dart';
 import 'package:open_fashion/presentation/components/cards/product_cards.dart';
@@ -21,69 +20,45 @@ class ActionButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.black,
           foregroundColor: AppColors.black,
-          fixedSize: Size(double.maxFinite, 56),
+          fixedSize: const Size(double.maxFinite, 56),
           side: BorderSide.none,
-          shape: RoundedRectangleBorder()),
+          shape: const RoundedRectangleBorder()),
       child: Text(
         title,
         style: AppTextStyle.bodyL(color: AppColors.white),
       ),
     );
-    // InkWell(
-    //   onTap: onTap,
-    //   child: Container(
-    //     padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-    //     height: 56,
-    //     width: double.maxFinite,
-    //     color: AppColors.black,
-    //     child: Row(
-    //       children: [
-    // Text(
-    //   title,
-    //   style: AppTextStyle.bodyL(color: AppColors.white),
-    // ),
-    //         const Gap(20),
-    //         icon!
-    //       ],
-    //     ),
-    //   ),
-    // );
   }
 }
-
-class AppSubmitButton extends StatelessWidget {
-  const AppSubmitButton({
+class ActionButtonLight extends StatelessWidget {
+  const ActionButtonLight({
     super.key,
-    required this.icon,
+    required this.title,
+    this.onTap,
   });
 
-  final String icon;
+  final String title;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-        height: 56,
-        width: double.maxFinite,
-        color: AppColors.black,
-        child: Row(
-          children: [
-            Text(
-              'SUBMIT',
-              style: AppTextStyle.bodyL(color: AppColors.white),
-            ),
-            const Gap(20),
-            FaIcon(
-              FontAwesomeIcons.forward,
-              color: AppColors.white,
-            )
-          ],
-        ),
+    return ElevatedButton(
+      onPressed: onTap,
+      style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.white,
+          foregroundColor: AppColors.white,
+          fixedSize: const Size(double.maxFinite, 56),
+          side: const BorderSide(color: AppColors.border),
+          shape: const RoundedRectangleBorder()),
+      child: Text(
+        title,
+        style: AppTextStyle.bodyL(color: AppColors.black),
       ),
     );
   }
 }
+
+
 
 class AppBasketButton extends StatelessWidget {
   const AppBasketButton({
@@ -117,42 +92,12 @@ class AppBasketButton extends StatelessWidget {
           added ? CartControl(cartCount: cartCount, addToCart: addToCart, removeFromCart: removeFromCart, isDark: isDark,) : 
           GestureDetector(
             onTap: addToCart,
-            child: Icon(
+            child: const Icon(
                   Icons.add,
                   color: AppColors.white,
                 ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class AppCartButton extends StatelessWidget {
-  const AppCartButton({
-    super.key,
-    required this.title,
-  });
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-        height: 56,
-        width: double.maxFinite,
-        color: AppColors.black,
-        child: Row(
-          children: [
-            Image.asset(AppImages.cart),
-            Text(
-              title,
-              style: AppTextStyle.bodyL(color: AppColors.white),
-            ),
-          ],
-        ),
       ),
     );
   }

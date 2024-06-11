@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:open_fashion/constants/style_guides.dart';
 import 'package:open_fashion/domain/entities/cart_item.dart';
-import 'package:open_fashion/presentation/pages/cubit/shop_cubit.dart';
 
 class Header extends StatelessWidget implements PreferredSizeWidget {
   const Header({super.key, this.bottom});

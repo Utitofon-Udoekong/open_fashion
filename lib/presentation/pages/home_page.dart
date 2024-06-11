@@ -7,8 +7,6 @@ import 'package:open_fashion/domain/entities/cart_item.dart';
 import 'package:open_fashion/presentation/components/buttons/action_buttons.dart';
 import 'package:open_fashion/presentation/components/cards/product_cards.dart';
 import 'package:open_fashion/presentation/components/drawer/cart_sidebar.dart';
-import 'package:open_fashion/presentation/components/drawer/sidebar.dart';
-import 'package:open_fashion/presentation/components/header.dart';
 import 'package:open_fashion/constants/style_guides.dart';
 import 'package:open_fashion/presentation/pages/cubit/shop_cubit.dart';
 
@@ -77,7 +75,7 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: GridView.count(
             crossAxisCount: isGrid ? 2 : 1,
-            childAspectRatio: isGrid ? 9 / 18 : 16 / 9,
+            childAspectRatio: isGrid ? 9 / 18.12 : 16 / 7,
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
             children: products.map((product) {
@@ -101,10 +99,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      drawer: const SideBar(),
       endDrawer: const CartDrawer(),
-      // drawerEnableOpenDragGesture: false,
-      // endDrawerEnableOpenDragGesture: false,
     );
   }
 }
